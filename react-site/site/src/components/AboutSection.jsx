@@ -20,9 +20,7 @@ const AboutSection = () => {
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>
-              <h2>true</h2>
-            </motion.h2>
+            <motion.h2 variants={titleAnim}>true</motion.h2> {/* ✅ FIXED */}
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
