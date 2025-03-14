@@ -74,26 +74,25 @@ const Services = styled(About)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
-  @media (max-width: 1500px) {
-    display: block;
-    padding: 2rem 2rem;
+  @media (max-width: 1300px) {
+    justify-content: center;
   }
 `;
 
-const Cards = styled.div`
+export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem; /* Adaugă spațiu între elemente */
+  gap: 2rem;
 
   @media (max-width: 1500px) {
-    justify-content: space-between;
+    justify-content: center;
   }
 `;
 
-const Card = styled.div`
-  flex: 1 1 calc(50% - 2rem); /* 50% din container, cu spațiu între ele */
-  max-width: 400px; /* Evită extinderea pe ecrane mari */
+export const Card = styled.div`
+  flex: 1 1 20rem;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +111,7 @@ const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex: 1 1 100%; /* Pe ecrane mici, 1 pe rând */
+    flex: 1 1 100%;
   }
 `;
 
