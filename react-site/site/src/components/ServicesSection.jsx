@@ -7,17 +7,13 @@ import home2 from "../img/home2.png";
 import styled from "styled-components";
 import { About, Description, Image } from "../styles";
 import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+import { fade } from "../animation";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
+
   return (
-    <Services
-      variants={scrollReveal}
-      animate={controls}
-      initial="hidden"
-      ref={element}
-    >
+    <Services variants={fade} animate={controls} initial="hidden" ref={element}>
       <Description>
         <h2>
           High <span>quality</span> services
@@ -28,33 +24,33 @@ const ServicesSection = () => {
               <img src={clock} alt="icon" />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="icon" />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="icon" />
               <h3>Diaphragm</h3>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="icon" />
               <h3>Affordable</h3>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="icon" />
+        <img src={home2} alt="home2" />
       </Image>
     </Services>
   );
@@ -67,19 +63,24 @@ const Services = styled(About)`
   justify-content: space-between;
   align-items: center;
   padding: 5rem 10rem;
+
   h2 {
     padding-bottom: 5rem;
   }
+
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+
   @media (max-width: 1300px) {
-    justify-content: center;
+    display: block;
+    padding: 2rem;
+    text-align: center;
   }
 `;
 
-export const Cards = styled.div`
+const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -90,9 +91,9 @@ export const Cards = styled.div`
   }
 `;
 
-export const Card = styled.div`
+const Card = styled.div`
   flex: 1 1 20rem;
-  max-width: 400px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,13 +102,22 @@ export const Card = styled.div`
   .icon {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
     h3 {
-      margin-left: 1rem;
+      margin: 0;
       background: white;
       color: black;
       padding: 1rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
     }
+  }
+
+  p {
+    margin-top: 1rem;
+    color: #ccc;
   }
 
   @media (max-width: 768px) {

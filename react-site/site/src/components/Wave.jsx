@@ -22,8 +22,12 @@ const Wave = () => (
 
 const WaveSvg = styled.svg`
   position: absolute;
+  top: 30%;
   left: 0;
   z-index: 1;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export default Wave;
