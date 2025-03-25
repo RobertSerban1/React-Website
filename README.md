@@ -1,4 +1,4 @@
 
 ## 🔥 Preview
 
-![Interface](screenshots/gym-whale.png)
+![Interface](react-site/screenshots/gym-whale.png)
