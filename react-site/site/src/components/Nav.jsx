@@ -10,7 +10,7 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link id="Logo" to="/">
-          Home
+          <img src="/gymwhale-logo.jpg" alt="GymWhale Logo" />
         </Link>
       </h1>
       <ul>
@@ -55,33 +55,46 @@ const StyledNav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+
   a {
     color: white;
     text-decoration: none;
   }
+
   ul {
     display: flex;
     list-style: none;
+    align-items: center;
   }
-  #Logo {
-    font-size: 1.5rem;
-    font-family: "Lobster", cursive;
-    font-weight: lighter;
+
+  #Logo img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-top: 4px;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
   }
+
+  #Logo img:hover {
+    transform: scale(1.1);
+  }
+
   li {
     padding-left: 10rem;
     position: relative;
   }
+
   @media (max-width: 1300px) {
     flex-direction: column;
     padding: 2rem 1rem;
-    #Logo {
-      display: inline-block;
-    }
+
     ul {
       padding: 2rem;
       justify-content: space-around;
       width: 100%;
+
       li {
         padding: 0;
       }
@@ -96,6 +109,7 @@ const Line = styled(motion.div)`
   position: absolute;
   bottom: -80%;
   left: 60%;
+
   @media (max-width: 1300px) {
     left: 0%;
   }
