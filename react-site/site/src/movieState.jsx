@@ -1,10 +1,9 @@
 //Import Images
 import athlete from "./img/athlete-small.png";
 import sauna from "./img/sauna.jpg";
-import theracer from "./img/theracer-small.png";
 import athlete2 from "./img/athlete2.png";
-import jacuzzi from "./img/jacuzzi.jpg";
-import theracer2 from "./img/the-racer2.jpg";
+import nutrition from "./img/nutrition.jpg";
+import nutrition2 from "./img/nutrition2.jpeg";
 import pool from "./img/pool.jpg";
 
 export const MovieState = () => {
@@ -57,9 +56,9 @@ export const MovieState = () => {
     },
     {
       title: "Sports Nutrition",
-      mainImg: theracer,
+      mainImg: nutrition,
       url: "/work/nutrition",
-      secondaryImg: theracer2,
+      secondaryImg: nutrition2,
       awards: [
         {
           title: "Fuel your performance.",

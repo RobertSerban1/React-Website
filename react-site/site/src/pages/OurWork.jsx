@@ -3,6 +3,7 @@ import styled from "styled-components";
 import athlete from "../img/athlete-small.png";
 import pool from "../img/pool.jpg";
 import goodtimes from "../img/goodtimes-small.png";
+import nutrition from "../img/nutrition.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -24,7 +25,7 @@ const OurWork = () => {
 
   return (
     <Work
-      style={{ background: "#fff" }}
+      style={{ background: "" }}
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -71,7 +72,7 @@ const OurWork = () => {
         <motion.div variants={lineAnim} className="line" />
         <Link to="/work/nutrition">
           <Hide>
-            <motion.img variants={photoAnim} src={goodtimes} alt="goodtimes" />
+            <motion.img variants={photoAnim} src={nutrition} alt="nutrition" />
           </Hide>
         </Link>
       </Movie>
@@ -95,6 +96,7 @@ const Work = styled(motion.div)`
   h2 {
     padding: 1rem 0rem;
     text-align: center;
+    color: white;
   }
 `;
 
