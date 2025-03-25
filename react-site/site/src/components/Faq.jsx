@@ -19,51 +19,32 @@ const FaqSection = () => {
         Any Questions <span>FAQ</span>
       </h2>
       <LayoutGroup>
-        <Toggle title="How do I start?">
+        <Toggle title="How do I join Gym Whale?">
           <div className="answer">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              tempora.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloribus, similique?
+              Sign up online or visit us in person. Choose the plan that fits
+              you best and start your transformation!
             </p>
           </div>
         </Toggle>
-        <Toggle title="Daily Schedule">
+        <Toggle title="Do I need experience to start?">
           <div className="answer">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              tempora.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloribus, similique?
+              Not at all! Whether you're a beginner or advanced, we have
+              programs and support for all fitness levels.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Different Payment Methods">
+        <Toggle title="How can I pay?">
           <div className="answer">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              tempora.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloribus, similique?
-            </p>
+            <p>Payment can be made online or at our office.</p>
           </div>
         </Toggle>
-        <Toggle title="What Products do you offer">
+        <Toggle title="What Products do you offer?">
           <div className="answer">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              tempora.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloribus, similique?
+              We offer state-of-the-art weights and equipment, plus a relaxation
+              area.
             </p>
           </div>
         </Toggle>

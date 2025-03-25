@@ -3,7 +3,7 @@ import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import lifting from "../img/lifting.jpg";
 import styled from "styled-components";
 import { About, Description, Image } from "../styles";
 import { useScroll } from "./useScroll";
@@ -16,41 +16,41 @@ const ServicesSection = () => {
     <Services variants={fade} animate={controls} initial="hidden" ref={element}>
       <Description>
         <h2>
-          High <span>quality</span> services
+          Train <span>smarter</span>, not just <span>harder</span>
         </h2>
         <Cards>
           <Card>
             <div className="icon">
               <img src={clock} alt="icon" />
-              <h3>Efficient</h3>
+              <h3>24/7 Access</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Train on your own time, whenever it works best for you.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="icon" />
-              <h3>Teamwork</h3>
+              <h3>Expert Trainers</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Get guidance from certified coaches and fitness pros.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="icon" />
-              <h3>Diaphragm</h3>
+              <h3>Strength Zone</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>A dedicated area for heavy lifting and power training.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="icon" />
-              <h3>Affordable</h3>
+              <h3>Affordable Plans</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Get the results without breaking the bank.</p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="home2" />
+        <img src={lifting} alt="home2" />
       </Image>
     </Services>
   );
