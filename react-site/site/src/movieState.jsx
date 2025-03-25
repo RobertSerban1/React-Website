@@ -9,71 +9,71 @@ import theracer2 from "./img/the-racer2.jpg";
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
+      title: "Force Area",
       mainImg: athlete,
       secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      url: "/work/force-area",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Built to lift. Made to grow.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Our strength zone is where real transformation happens — dumbbells, barbells, power racks, and no excuses.",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Heavy weights, heavy gains.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "From deadlifts to PRs, this is the area designed for serious lifters and those who want to become one.",
         },
         {
-          title: "It's okay lmao.",
+          title: "The power corner.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Loaded with high-end strength equipment, this is your go-to zone to test limits and build raw muscle.",
         },
       ],
     },
     {
-      title: "Good Times",
+      title: "Recovery Area",
       mainImg: goodtimes,
-      url: "/work/good-times",
+      url: "/work/recovery-area",
       secondaryImg: goodtimes2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: " Recover. Recharge. Rise.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Step into a space designed to relax your body and reset your mind — sauna, pool, and peaceful recovery zones await.",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Where strength meets serenity.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "After every intense workout, give your body what it deserves — hydrotherapy, stretching areas, and full mental reset.",
         },
         {
-          title: "It's okay lmao.",
+          title: "Recovery isn't optional. It's part of the plan.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Our recovery zone features everything you need to prevent injury, reduce soreness, and feel your best — every day.",
         },
       ],
     },
     {
-      title: "The Racer",
+      title: "Sports Nutrition",
       mainImg: theracer,
-      url: "/work/the-racer",
+      url: "/work/nutrition",
       secondaryImg: theracer2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Fuel your performance.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "From protein shakes to clean energy snacks, we’ve got the fuel your body needs to push harder and recover faster.",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Nutrition that works as hard as you do.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Maximize your gains with science-backed supplements and personalized advice from our certified nutrition partners.",
         },
         {
-          title: "It's okay lmao.",
+          title: "Eat smart. Train harder.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Grab a shake post-workout or stock up on essentials — our in-house nutrition bar keeps you powered through every rep.",
         },
       ],
     },

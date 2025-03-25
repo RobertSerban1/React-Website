@@ -40,9 +40,9 @@ const OurWork = () => {
 
       {/* Prima secțiune - Athlete */}
       <Movie variants={fade} initial="hidden" animate="show">
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.h2 variants={fade}>Force Area</motion.h2>
         <motion.div variants={lineAnim} className="line" />
-        <Link to="/work/the-athlete">
+        <Link to="/work/force-area">
           <Hide>
             <motion.img variants={photoAnim} src={athlete} alt="athlete" />
           </Hide>
@@ -51,9 +51,9 @@ const OurWork = () => {
 
       {/* A doua secțiune - The Racer */}
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <motion.h2 variants={fade}>The Racer</motion.h2>
+        <motion.h2 variants={fade}>Recovery Area</motion.h2>
         <motion.div variants={lineAnim} className="line" />
-        <Link to="/work/the-racer">
+        <Link to="/work/recovery-area">
           <Hide>
             <motion.img variants={photoAnim} src={theracer} alt="racer" />
           </Hide>
@@ -67,9 +67,9 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <motion.h2 variants={fade}>Good Times</motion.h2>
+        <motion.h2 variants={fade}>Sports Nutrition</motion.h2>
         <motion.div variants={lineAnim} className="line" />
-        <Link to="/work/good-times">
+        <Link to="/work/nutrition">
           <Hide>
             <motion.img variants={photoAnim} src={goodtimes} alt="goodtimes" />
           </Hide>
@@ -94,6 +94,7 @@ const Work = styled(motion.div)`
   }
   h2 {
     padding: 1rem 0rem;
+    text-align: center;
   }
 `;
 
