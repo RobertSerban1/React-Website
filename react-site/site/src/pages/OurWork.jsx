@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
+import pool from "../img/pool.jpg";
 import goodtimes from "../img/goodtimes-small.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -55,7 +55,7 @@ const OurWork = () => {
         <motion.div variants={lineAnim} className="line" />
         <Link to="/work/recovery-area">
           <Hide>
-            <motion.img variants={photoAnim} src={theracer} alt="racer" />
+            <motion.img variants={photoAnim} src={pool} alt="pool" />
           </Hide>
         </Link>
       </Movie>
